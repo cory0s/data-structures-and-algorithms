@@ -27,7 +27,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-    const myRe = /[A-Z][a-z]*/g;
+    const myRe = /[A-Z][A-Za-z]*/g;
     return str.match(myRe);
 };
 
@@ -38,7 +38,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  newArray = arr.match(/^[A-J]/);
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,7 +55,7 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-    const myRe = /[O,o][ct][a-z]*/g;
+    const myRe = /^[Oo]ct(ober)?$/;
     return myRe.test(input);
 };
 
@@ -69,7 +70,9 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  const myRe = /\w+\s/g;
+  // /\w+\s
+  return str.match(myRe);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +88,8 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...
+  // Solution code here...'
+  // str.replace(/[a|e|i|o|u]/g, '_');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -102,6 +106,7 @@ const seashells = 'She sells seashells by the seashore. The shells she sells are
 
 const findShells = (str) => {
   // Solution code here...
+  // /\b([A=Za=z]*ells)\b/g
 };
 
 /* ------------------------------------------------------------------------------------------------
