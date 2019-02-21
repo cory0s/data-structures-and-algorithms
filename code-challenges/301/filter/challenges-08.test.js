@@ -159,7 +159,14 @@ For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 
 ------------------------------------------------------------------------------------------------ */
 
 const evenOddNumericValues = (arr) => {
-  // Solution code here...
+    let numbers = arr.filter(num => typeof num === 'number');
+    return numbers.map(function(num){
+        if(num%2 === 0){
+            return 'even';
+        } else {
+            return 'odd';
+        }
+    })
 };
 
 /* ------------------------------------------------------------------------------------------------
