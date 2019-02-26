@@ -30,8 +30,9 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-    const reg = /^\w+ | w+\./\w+/
-};
+    const reg = /^\w+\.?\w+@\w+\.(com|net|org)$/g;
+    return reg.test(email);
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
