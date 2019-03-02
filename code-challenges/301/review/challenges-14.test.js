@@ -9,7 +9,7 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
-  // Solution code here...
+  return arr.map(string => string.charAt(0).toUpperCase() + string.slice(1));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +84,12 @@ let starWarsData = [{
 }]
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  let answers = [];
+  arr.forEach(obj => {
+    if(parseInt(obj.mass) > parseInt(arr[0].mass)){
+      answers.push(obj.name);
+  }})
+  return answers.join(' - ');
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,8 +106,20 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBy = (property, arr) => {
-  // Solution code here...
+const sortBy = (property, arr) => {  
+  if(typeof arr[0][property] === 'string'){
+    arr.sort(function(a,b){
+      return a[property] < b[property] ? -1 : 1;
+    });
+    return arr;
+  }
+
+  if(typeof arr[0][property] === 'number'){
+    arr.sort(function(a,b){
+      return a[property] - b[property];
+    })
+    return arr;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +135,8 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-// Solution code here...
+  const regx = /https:\/\/w?w?w?.?\w*.(com|org|net)/g;
+  return regx.test(url);
 }
 
 /* ------------------------------------------------------------------------------------------------
