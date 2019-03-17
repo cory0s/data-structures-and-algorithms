@@ -56,11 +56,12 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  let string = '';
-  for(let i=0; i<str.length+1; i+2){
-    string.concat(charAt(i));
+  let string = [];
+  for(let i=0; i<str.length; i+2){
+    // let letter = str.charAt(i);
+    string.push(letter);
   }
-  return string;
+  return string.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,7 +87,11 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  let answers = [];
+  for(i=0; i<arr.length; i++){
+    answers.push(arr[i].includes(target) ? arr[i] : null);
+  }
+  return answers;
 };
 
 /* ------------------------------------------------------------------------------------------------
