@@ -38,8 +38,10 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  newArray = arr.match(/^[A-J]/);
-  return newArray;
+  let answers = [];
+  let regex = /^[A-J]\w*/;
+  arr.forEach(city => regex.test(city) === true ? answers.push(city) : null);
+  return answers;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,8 +90,7 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...'
-  // str.replace(/[a|e|i|o|u]/g, '_');
+  return str.replace(/[a|e|i|o|u]/g, '_');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,7 +106,8 @@ Hint: All of these words end with the letters "ells".
 const seashells = 'She sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I\'m sure she sells seashore shells.';
 
 const findShells = (str) => {
-  // Solution code here...
+  const regex = /\w*([A=Za=z]*ells)/g;
+  return str.match(regex);
   // /\b([A=Za=z]*ells)\b/g
 };
 
