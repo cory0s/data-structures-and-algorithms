@@ -1,2 +1,4 @@
 # data-structures-and-algorithms
-Repository for code challenges and tests
+
+#TABLE OF CONTENTS
+1. Array-reverse challenge
