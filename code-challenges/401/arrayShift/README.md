@@ -8,4 +8,4 @@ This challenge asks to write a function which takes in an array of elements and 
 My approach involved creating an empty array and creating two for loops.  The first for loop populates the empty array with the input array values, up to the midpoint. Next, the new array was populated with the value at the midpoint. Finally, the second for loop was used to fill in the rest of the new array. Big O space/time is O(n).
 
 ## Solution
-![alt text]()
+![alt text](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/array-shift.jpg)
