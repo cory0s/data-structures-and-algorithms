@@ -1,21 +1,19 @@
 'use strict';
 
-// let linkedList = module.exports = {};
-
 //Define LinkedList and Node classes
 
 class LinkedList {
 
   constructor(){
     this.head = null;
-    this.length = 0;
+    // this.length = 0;
   }
 
   insert(data){
     const newNode = new Node(data);
     newNode.next = this.head;
     this.head = newNode;
-    this.length++;
+    // this.length++;
     return this;
   }
 
@@ -35,10 +33,10 @@ class LinkedList {
     let current = this.head;
     const values = [];
     while(current != null){
-      console.log(current.data);
       values.push(current.data);
       current = current.next;
     }
+    console.log(values.join('=>'));
     return values;
   }
 
@@ -46,6 +44,7 @@ class LinkedList {
     let node = new Node(data);
     if(this.head === null){
       this.head = node;
+      return;
     } else {
       let current = this.head;
       while(current.next != null){
@@ -93,6 +92,8 @@ class Node {
     this.next = null;
   }
 }
+
+module.exports = {LinkedList, Node};
 
 //Create functions to instantiate and manipulate linked lists
 

@@ -10,7 +10,7 @@ The challenge is to create a LinkedList class which calls a Node class to build 
 - The LinkedList class calls the Node class to create new nodes using the insert method.
 - The LinkedList includes method utilizes a while loop to iterate through the length of the list and check whether or not a data value exists in any of the nodes.
 - The LinkedList print method utilizes a while loop to iterate through the length of the list and print the data value for each individual node until it reaches the end of the list (i.e. null).
-- The Big O for space and time is O(1).
+- The Big O for space and time is O(n).
 
 ## API
 - Node.insert(data) - creates a new node with value = argument "val" and inserts it at the head of the list.
