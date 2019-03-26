@@ -2,11 +2,11 @@
 
 const linkedList = require('../linked-list.js');
 
-let newList = linkedList.createLinkedList();
-
 describe('Test Linked List', () => {
+  let list = new linkedList.LinkedList();
+
   it('Should successfully instantiate an empty linked list', () => {
-    expect(linkedList.createLinkedList()).toEqual({ head: null, length: 0 });
+    expect(list).toEqual({ head: null, length: 0 });
   });
   // it('Can properly insert into the linked list'), () => {
   //   expect(newList.insert(10).toEqual({ head: {data: 10, next: null}}));

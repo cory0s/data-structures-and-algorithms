@@ -1,6 +1,6 @@
 'use strict';
 
-let linkedList = module.exports = {};
+// let linkedList = module.exports = {};
 
 //Define LinkedList and Node classes
 
@@ -41,6 +41,49 @@ class LinkedList {
     }
     return values;
   }
+
+  append(data){
+    let node = new Node(data);
+    if(this.head === null){
+      this.head = node;
+    } else {
+      let current = this.head;
+      while(current.next != null){
+        current = current.next;
+      }
+      current.next = node;
+    }
+    this.length++;
+    return this;
+  }
+
+  insertBefore(data, newVal){
+    let node = new Node(newVal);
+    let current = this.head;
+    let prev = {};
+    while(current.next != data){
+      prev = current;
+      current = current.next;
+    }
+    node.next = current;
+    prev.next = node;
+    this.length++;
+    return this;
+  }
+
+  insertAfter(data, newVal){
+    let node = new Node(newVal);
+    let current = this.head;
+    let prev;
+    let count = 0;
+    while(current.next != data){
+      count += count;
+      prev = current;
+      current = current.next;
+    }
+    current.next = node;
+    node.next = this[count+1];
+  }
 }
 
 class Node {
@@ -53,7 +96,14 @@ class Node {
 
 //Create functions to instantiate and manipulate linked lists
 
-linkedList.createLinkedList = function() {
-  const newList = new LinkedList();
-  return newList;
-};
+// linkedList.createLinkedList = function() {
+//   const newList = new LinkedList();
+//   return newList;
+// };
+
+let ll = new LinkedList;
+console.log(ll);
+ll.insert(10);
+ll.insert(40);
+// ll.insertAfter(20, 25);
+ll.print();

@@ -16,3 +16,6 @@ The challenge is to create a LinkedList class which calls a Node class to build 
 - Node.insert(data) - creates a new node with value = argument "val" and inserts it at the head of the list.
 - Node.includes(data) - searches the list for a node with value = argumeent "val" and returns true/false if exists.
 - Node.print() - prints a list of all values of all nodes in the linked list.
+
+## Solution
+- [Solution]()
