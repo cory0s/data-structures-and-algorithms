@@ -18,4 +18,4 @@ The challenge is to create a LinkedList class which calls a Node class to build 
 - Node.print() - prints a list of all values of all nodes in the linked list.
 
 ## Solution
-- [Solution]()
+- ![alt text](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/linked-list.JPG)
