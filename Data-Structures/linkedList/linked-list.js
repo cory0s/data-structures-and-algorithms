@@ -43,7 +43,7 @@ class LinkedList {
       values.push(current.data);
       current = current.next;
     }
-    console.log(values.join('=>'));
+    // console.log(values.join('=>'));
     return values;
   }
 
@@ -95,8 +95,10 @@ class LinkedList {
     if(idx > this.length-1 || idx<0){ return null; }
     const answer = [];
     let current = this.head;
+    if(this.length === 1){ answer.push(this.head.data); }
     while(current.next){
       current = current.next;
+      console.log(current);
       answer.push(current.data);
     }
     console.log(answer);
