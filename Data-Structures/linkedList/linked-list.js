@@ -1,19 +1,26 @@
 'use strict';
 
 //Define LinkedList and Node classes
+class Node {
+
+  constructor(data, next){
+    this.data = data;
+    this.next = null;
+  }
+}
 
 class LinkedList {
 
   constructor(){
     this.head = null;
-    // this.length = 0;
+    this.length = 0;
   }
 
   insert(data){
     const newNode = new Node(data);
     newNode.next = this.head;
     this.head = newNode;
-    // this.length++;
+    this.length++;
     return this;
   }
 
@@ -83,28 +90,18 @@ class LinkedList {
     current.next = node;
     node.next = this[count+1];
   }
-}
 
-class Node {
-
-  constructor(data, next){
-    this.data = data;
-    this.next = null;
+  kValue(idx){
+    if(idx > this.length-1 || idx<0){ return null; }
+    const answer = [];
+    let current = this.head;
+    while(current.next){
+      current = current.next;
+      answer.push(current.data);
+    }
+    console.log(answer);
+    return answer[answer.length - 1 - idx];
   }
 }
 
 module.exports = {LinkedList, Node};
-
-//Create functions to instantiate and manipulate linked lists
-
-// linkedList.createLinkedList = function() {
-//   const newList = new LinkedList();
-//   return newList;
-// };
-
-let ll = new LinkedList;
-console.log(ll);
-ll.insert(10);
-ll.insert(40);
-// ll.insertAfter(20, 25);
-ll.print();
