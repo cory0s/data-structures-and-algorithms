@@ -13,9 +13,13 @@ The challenge is to create a LinkedList class which calls a Node class to build 
 - The Big O for space and time is O(n).
 
 ## API
-- Node.insert(data) - creates a new node with value = argument "val" and inserts it at the head of the list.
-- Node.includes(data) - searches the list for a node with value = argumeent "val" and returns true/false if exists.
-- Node.print() - prints a list of all values of all nodes in the linked list.
+- LinkedList.insert(data) - creates a new node with value = argument "val" and inserts it at the head of the list.
+- LinkedList.includes(data) - searches the list for a node with value = argumeent "val" and returns true/false if exists.
+- LinkedList.print() - prints a list of all values of all nodes in the linked list.
+- LinkedList.append(data) - adds value to the end of the list
+- LinkedList.insertBefore(data, val) - insert value before node with value = data.
+- LinkedList.insertAfter(data, val) - insert value after node with value = data.
+- LinkedList.kValue(n) - return value at index "n" from the end of the linked list.
 
 ## Solution
 - ![alt text](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/linked-list.JPG)
