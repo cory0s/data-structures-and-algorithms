@@ -35,6 +35,12 @@ describe('Test Linked List', () => {
 describe('Test method kValue', () => {
   let list = new linkedList.LinkedList();
   list.insert(1);
+  let longList = new linkedList.LinkedList();
+  longList.insert(1);
+  longList.insert(2);
+  longList.insert(3);
+  longList.insert(4);
+  longList.insert(5);
 
   it('Should not allow k values greater than LL length', () => {
     expect(list.kValue(4)).toEqual(null);
@@ -47,5 +53,8 @@ describe('Test method kValue', () => {
   });
   it('Should work for linked list of length 1', () => {
     expect(list.kValue(0)).toEqual(1);
+  });
+  it('Should work for k in the middle of the list', () => {
+    expect(longList.kValue(2)).toEqual(3);
   });
 });
