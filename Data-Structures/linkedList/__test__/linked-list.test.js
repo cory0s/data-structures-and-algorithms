@@ -1,6 +1,7 @@
 'use strict';
 
 const linkedList = require('../linked-list.js');
+const merge = require('../llMerge/ll-merge.js');
 
 describe('Test Linked List', () => {
   let list = new linkedList.LinkedList();
@@ -56,5 +57,27 @@ describe('Test method kValue', () => {
   });
   it('Should work for k in the middle of the list', () => {
     expect(longList.kValue(2)).toEqual(3);
+  });
+});
+
+//Tests for Code Challenge 08
+describe('Test array merge', () => {
+  let list1 = new linkedList.LinkedList();
+  list1.insert(4);
+  list1.insert(5);
+  list1.insert(6);
+  let list2 = new linkedList.LinkedList();
+  list2.insert(1);
+  list2.insert(2);
+  list2.insert(3);
+
+  it('Should merge 2 lists', () => {
+    expect(merge.mergeLists(list1, list2)).not.toEqual(null);
+  });
+  it('Should return null for invalid input', () => {
+    expect(merge.mergeLists(null, list2)).toEqual(null);
+    expect(merge.mergeLists([], list2)).toEqual(null);
+    expect(merge.mergeLists(true, list2)).toEqual(null);
+    expect(merge.mergeLists('Hello', list2)).toEqual(null);
   });
 });
