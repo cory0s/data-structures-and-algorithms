@@ -41,6 +41,6 @@ The challenge is to create a function in file ll-merge.js which can take (2) lin
 - ll-merge.js - contains function mergeLists(A,B) which merges two linked lists.
 
 ## Solution
-- ![alt text](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/linked-list.JPG)
-- ![alt text](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/kValue.JPG)
-- ![alt text]()
+- ![Linked List](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/linked-list.JPG)
+- ![K Value](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/kValue.JPG)
+- ![LL Merge](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/ll-merge.JPG)
