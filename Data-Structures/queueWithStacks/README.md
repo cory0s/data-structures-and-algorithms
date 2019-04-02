@@ -14,4 +14,4 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 - dequeue(): Since we would like to dequeue the bottom node of stack1, we need to reverse the order of the stack. This involved popping all the elements off stack1 and pushing them to stack 2. Thus, the top node of stack2 is the previous bottom node of stack1 and we can just pop() off of stack2. This is O(n) efficiency because we need to pop() all "n" nodes off of stack1 before we can pop() the node off of stack2.
 
 ## Solution
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/queueWStacks.JPG)
