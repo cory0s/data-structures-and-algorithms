@@ -21,4 +21,4 @@ The approach involved creating a class which use the Queue() class to create a n
 - Edge Case (if applicable/obvious)
 
 ## Whiteboard
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/animalShelter.JPG)
