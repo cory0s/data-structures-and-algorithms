@@ -9,7 +9,7 @@ Implement the following methods:
 - dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
 ## Approach & Efficiency
-The approach involved creating a class which use the Queue() class to create a new AnimalShelter().  The enqueue and dequeue methods were used to add and remove "dog" and "cat" nodes by preference.
+The approach involved creating a class which use the Queue() class to create a new AnimalShelter().  The enqueue and dequeue methods were used to add and remove "dog" and "cat" nodes by preference. Big O was O(1) for enqueue and O(n) for dequeue.
 
 ## API
 - enqueque(val): adds a node with value = val to the end of a queue.
