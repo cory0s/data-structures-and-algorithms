@@ -16,4 +16,4 @@ Preorder traversal was utilized to migrate through the tree and check each value
 - Time: O(n) 
 
 ## Solution
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/fizz-buzz.jpg)
