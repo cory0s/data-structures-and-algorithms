@@ -10,8 +10,11 @@ This exercise practices creation of both a BinaryTree and BinarySearchTree class
 - Create a BinarySearchTree class
     - Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
     - Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+My approach involved creating new nodes and checking whether or not a left/right child node existed using a while loop. If they did, the function was recursively called until a leaf was reached. 
+- Big O for time: O(log(n))
+- Big O for space: O(1)
 
 ## API
 - preOrder(): performs a pre order traversal
