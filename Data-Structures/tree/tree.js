@@ -15,58 +15,52 @@ class BinaryTree {
     this.root = null;
   }
 
-  preOrder(root){
-    const output = [];
-    output.push(root.value);
+  preOrder(root, arr=[]){
+    arr.push(root.value);
 
     if(root.left){
-      preOrder(root.left);
+      this.preOrder(root.left, arr);
     }
     if(root.right){
-      preOrder(root.right);
+      this.preOrder(root.right, arr);
     }
-    return output;
+    return arr;
   }
 
-  inOrder(root){    
-    const output = [];
+  inOrder(root, arr=[]){    
 
     if(root.left){
-      inOrder(root.left);
+      this.inOrder(root.left, arr);
     }
 
-    output.push(root.value);
+    arr.push(root.value);
 
     if(root.right){
-      inOrder(root.right);
+      this.inOrder(root.right, arr);
     }
-    return output;
+    return arr;
   }
 
-  postOrder(){
-    const output = [];
+  postOrder(root, arr=[]){
 
     if(root.left){
-      postOrder(root.left);
+      this.postOrder(root.left, arr);
     }
     
     if(root.right){
-      postOrder(root.right);
+      this.postOrder(root.right, arr);
     }
 
-    output.push(root.value);
+    arr.push(root.value);
 
-    return output;
+    return arr;
   }
 }
 
-class BinarySearchTree {
-  constructor(){
-    this.root = null;
-  }
+class BinarySearchTree extends BinaryTree {
 
   add(value){
-    const root = this.root;
+    let root = this.root;
     if(root === null){
       this.root = new Node(value);
     } else {
@@ -110,3 +104,5 @@ class BinarySearchTree {
     return false;
   }
 }
+
+module.exports = {BinarySearchTree, Node};
