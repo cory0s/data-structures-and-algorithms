@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^24.5.0"
+    "jest": "^24.5.0",
+    "mongoose-schema-jsonschema": "^1.2.1"
   }
 }
