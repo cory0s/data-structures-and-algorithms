@@ -55,6 +55,20 @@ class BinaryTree {
 
     return arr;
   }
+  
+  findMaxValue(root){
+    let temp = [];
+    let maxValue = 0;
+    let current = this.root;
+    this.preOrder(current,temp);
+    temp.forEach(number => {
+      if(number > maxValue){
+        maxValue = number;
+      }
+    });
+    return maxValue;
+  }
+
 }
 
 class BinarySearchTree extends BinaryTree {
