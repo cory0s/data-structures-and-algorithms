@@ -12,7 +12,7 @@
 - When merging back together, start with the beginning value of each pair of subsets. Parse through each array while comparing values and recreating a new sorted array.
 
 ## Visual
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/mergeSort.jpg)
 
 ## Watch
 https://www.youtube.com/watch?v=JSceec-wEyw
