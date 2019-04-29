@@ -9,7 +9,7 @@ function mergeSort(arr){
       let c = arr.slice(mid);
       mergeSort(b);
       mergeSort(c);
-      Merge(b,c,arr);
+      merge(b,c,arr);
     }
 }
 
