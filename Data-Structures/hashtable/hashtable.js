@@ -32,7 +32,7 @@ class Hashtable {
 
     contains(key){
       let idx = this.hash(key);
-      if(this.buckets[idx] != null){
+      if(this.buckets[idx]){
         return true;
       } else {
         return false;
@@ -40,6 +40,8 @@ class Hashtable {
     }
 
     hash(key){
-      return key.toString().length % this.size;
+      return key.length % this.size;
     }
 }
+
+module.exports = Hashtable;
