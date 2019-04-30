@@ -10,4 +10,4 @@ Space efficiency: O(n)
 Time efficiency: O(n)
 
 ## Solution
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/tree-intersection.JPG)
