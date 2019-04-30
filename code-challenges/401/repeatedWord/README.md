@@ -12,4 +12,4 @@ Space: O(1)
 Time: O(1)
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/repeat-word.JPG)
