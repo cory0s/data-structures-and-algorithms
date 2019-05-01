@@ -9,5 +9,8 @@ My approach involved creating a hashtable and storing all values from tree1 in t
 Space efficiency: O(n)
 Time efficiency: O(n)
 
+## Tests
+[Travis](https://www.travis-ci.com/cory0s/data-structures-and-algorithms/builds/110189600)
+
 ## Solution
 ![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/tree-intersection.JPG)
