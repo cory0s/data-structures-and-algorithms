@@ -30,3 +30,6 @@ findMaxValue():
 - add(): adds a new node with an input value to a BinarySearchTree
 - contains(): searches a BinarySearchTree for a value
 - findMaxValue(): searches the binary tree and returns the maximum value
+
+## Challenge-17 UML
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/tree-max-value.jpg)

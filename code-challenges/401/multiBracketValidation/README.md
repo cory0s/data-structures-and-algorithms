@@ -15,4 +15,4 @@ My approach involved pushing/enqueing each opening/closing bracket to a stack an
 - multiBracketValidation() checks whether all sets of brackets and returns true if all pairs have a match.
 
 ## Solution
-- ![bracketValidation]()
+- ![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/bracketValidation.JPG)

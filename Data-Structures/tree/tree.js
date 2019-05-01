@@ -16,8 +16,12 @@ class BinaryTree {
   }
 
   preOrder(root, arr=[]){
-    arr.push(root.value);
+    if(root===null){
+      return arr;
+    }
 
+    arr.push(root.value);
+ 
     if(root.left){
       this.preOrder(root.left, arr);
     }
@@ -28,6 +32,9 @@ class BinaryTree {
   }
 
   inOrder(root, arr=[]){    
+    if(root===null){
+      return arr;
+    }
 
     if(root.left){
       this.inOrder(root.left, arr);
@@ -42,6 +49,9 @@ class BinaryTree {
   }
 
   postOrder(root, arr=[]){
+    if(root===null){
+      return arr;
+    }
 
     if(root.left){
       this.postOrder(root.left, arr);

@@ -17,3 +17,6 @@ Space efficiency: O(n)
 - Can successfully instantiate a new tree
 - Can successfully output an empty array for an empty tree
 - Can successfully output an array of all values in breath first order
+
+## WhiteBoard
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/breadth-first.jpg)
