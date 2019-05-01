@@ -11,4 +11,4 @@ The second parameter is a hashmap that has word strings as keys, and antonyms of
 My approach involved creating a new hash table, and adding values from the first table to the new HT. Next the second hash table is iterated over, and keys are checked to see if they are contained in the first table. If so, values from the second table are added.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/left-join.JPG)
