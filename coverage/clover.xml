@@ -1,46 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556747726737" clover="3.2.0">
-  <project timestamp="1556747726738" name="All files">
-    <metrics statements="28" coveredstatements="16" conditionals="14" coveredconditionals="6" methods="8" coveredmethods="5" elements="50" coveredelements="27" complexity="0" loc="28" ncloc="28" packages="2" files="2" classes="2"/>
-    <package name="Data-Structures.hashtable">
-      <metrics statements="18" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="3"/>
-      <file name="hashtable.js" path="/Users/Admin/Documents/data-structures-and-algorithms/Data-Structures/hashtable/hashtable.js">
-        <metrics statements="18" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="3"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="code-challenges.401.leftJoin">
-      <metrics statements="10" coveredstatements="7" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
-      <file name="left-join.js" path="/Users/Admin/Documents/data-structures-and-algorithms/code-challenges/401/leftJoin/left-join.js">
-        <metrics statements="10" coveredstatements="7" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="6" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1557180533545" clover="3.2.0">
+  <project timestamp="1557180533545" name="All files">
+    <metrics statements="23" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6" elements="33" coveredelements="22" complexity="0" loc="23" ncloc="23" packages="1" files="1" classes="1"/>
+    <file name="graph.js" path="/Users/Admin/Documents/data-structures-and-algorithms/Data-Structures/graph/graph.js">
+      <metrics statements="23" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
+      <line num="5" count="11" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="19" count="6" type="stmt"/>
+      <line num="20" count="6" type="stmt"/>
+      <line num="24" count="11" type="stmt"/>
+      <line num="25" count="11" type="stmt"/>
+      <line num="26" count="11" type="stmt"/>
+      <line num="27" count="11" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="65" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>
