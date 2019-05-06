@@ -5,14 +5,14 @@ let Graph = require('../graph.js');
 describe('Test Graph class', () => {
   
     it('Should successfully add a node', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
         graph.addNode('WA');
 
       expect(graph).toBeDefined();
     });
 
     it('Should successfully add an edge', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
         graph.addNode('WA');
         graph.addNode('CA');
         graph.addDirectedEdge('CA', 'WA', 1);
@@ -20,7 +20,7 @@ describe('Test Graph class', () => {
     });
 
     it('Nodes can be retrieved from graph', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
         graph.addNode('WA');
         graph.addNode('CA');
 
@@ -28,7 +28,7 @@ describe('Test Graph class', () => {
     });
 
     it('Neighbors can be retrieved from graph', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
         graph.addNode('WA');
         graph.addNode('CA');
 
@@ -36,7 +36,7 @@ describe('Test Graph class', () => {
     });
 
     it('Neighbors are returned with weight', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
         graph.addNode('WA');
         graph.addNode('CA');
 
@@ -44,10 +44,19 @@ describe('Test Graph class', () => {
     });
 
     it('Proper size is returned', () => {
-        let graph = new Graph.Graph();
+        let graph = new Graph();
+        graph.addNode('WA');
+        graph.addNode('CA');
+        let size = graph.size();
+
+      expect(size).toEqual(2);
+    });
+
+    it('Breadth first traversal should work', () => {
+        let graph = new Graph();
         graph.addNode('WA');
         graph.addNode('CA');
 
-      expect(graph.size()).toEqual(2);
+      expect(graph.breadthFirst('WA')).toEqual(['WA', 'CA']);
     });
 });
