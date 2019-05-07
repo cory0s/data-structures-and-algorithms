@@ -11,4 +11,4 @@ Space efficiency: O(1)
 Time efficiency: O(n)
 
 ## Solution
-![alt]()
+![alt](https://github.com/cory0s/data-structures-and-algorithms/blob/master/assets/GetEdges%20-%20WB.jpg)

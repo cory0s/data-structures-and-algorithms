@@ -30,8 +30,7 @@ class Graph{
     }
 
     addDirectedEdge(startVertex, endVertex, weight){
-        let edges = this.adjacencyList.get(startVertex);
-        edges.push(new Edge(endVertex, weight));
+        this.adjacencyList.get(startVertex).push(new Edge(endVertex, weight));
     }
 
     addUndirectedEdge(start, end, weight){

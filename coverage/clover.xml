@@ -1,53 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557183555608" clover="3.2.0">
-  <project timestamp="1557183555608" name="All files">
-    <metrics statements="67" coveredstatements="32" conditionals="6" coveredconditionals="1" methods="21" coveredmethods="10" elements="94" coveredelements="43" complexity="0" loc="67" ncloc="67" packages="2" files="2" classes="2"/>
-    <package name="graph">
-      <metrics statements="34" coveredstatements="23" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="7"/>
+<coverage generated="1557267262140" clover="3.2.0">
+  <project timestamp="1557267262140" name="All files">
+    <metrics statements="77" coveredstatements="18" conditionals="10" coveredconditionals="1" methods="23" coveredmethods="7" elements="110" coveredelements="26" complexity="0" loc="77" ncloc="77" packages="3" files="3" classes="3"/>
+    <package name="Data-Structures.graph">
+      <metrics statements="33" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="6"/>
       <file name="graph.js" path="/Users/Admin/Documents/data-structures-and-algorithms/Data-Structures/graph/graph.js">
-        <metrics statements="34" coveredstatements="23" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="7"/>
+        <metrics statements="33" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="6"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="26" count="13" type="stmt"/>
-        <line num="27" count="13" type="stmt"/>
-        <line num="28" count="13" type="stmt"/>
-        <line num="29" count="13" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="67" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="73" count="1" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="stacksAndQueues">
-      <metrics statements="33" coveredstatements="9" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="3"/>
+    <package name="Data-Structures.stacksAndQueues">
+      <metrics statements="33" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="0"/>
       <file name="stacks-and-queues.js" path="/Users/Admin/Documents/data-structures-and-algorithms/Data-Structures/stacksAndQueues/stacks-and-queues.js">
-        <metrics statements="33" coveredstatements="9" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="3"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <metrics statements="33" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -62,16 +61,16 @@
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="49" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
@@ -79,6 +78,23 @@
         <line num="65" count="0" type="stmt"/>
         <line num="69" count="0" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="code-challenges.401.getEdge">
+      <metrics statements="11" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="get-edge.js" path="/Users/Admin/Documents/data-structures-and-algorithms/code-challenges/401/getEdge/get-edge.js">
+        <metrics statements="11" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
   </project>
