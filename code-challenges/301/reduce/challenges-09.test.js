@@ -215,7 +215,8 @@ const snorlaxData = {
 };
 
 const extractStat = (statName, arr) => {
-  const reducer = (acc, val) => arr.stats.forEach((obj) => obj.stat.name) === statName ? val : null;
+  let stats = arr.stats;
+  const reducer = (acc, val) => stats.forEach((obj) => obj.stat.name === statName ? val : null);
   return arr.reduce(reducer);
 };
 
