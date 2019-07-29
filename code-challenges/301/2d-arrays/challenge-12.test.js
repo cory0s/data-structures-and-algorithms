@@ -31,6 +31,7 @@ const grandTotal = (stores) => {
         }
         grandTotals.push(dailyTotal);
     }
+    console.log(grandTotals);
     return grandTotals;
 }
 
@@ -45,16 +46,20 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  const totals = [];
-  for(let i=0; i<hoursOpen.length; i++){
-    let dailyTotal = {};
-    for(let j=0; j<cookieStores.length; j++){
-      dailyTotal.sales += data[j][i];
-    }
-    dailyTotal.time = hours[i];
-    totals.push(dailyTotal);
-  }
-  return totals;
+  const totals = grandTotal(cookieStores);
+  const salesInfo = [];
+  let position = 0;
+
+  totals.forEach(total => {
+    let daily = {};
+    daily.sales = total.toString() + ' cookies';
+    daily.time = hoursOpen[position];
+    position++;
+    salesInfo.push(daily);
+  });
+
+
+  return salesInfo;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +123,13 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
-  // Solution code here...
+  let answer = 1;
+  for(let i=0; i< numbers.length; i++){
+    numbers[i].forEach(num => {
+      answer = answer * num;
+    });
+  }
+  return answer;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -138,7 +149,15 @@ const weeklyTemperatures = [
 ];
 
 const averageDailyTemperature = (weather) => {
-  // Solution code here...
+  let total =0;
+  let sum = 0;
+  for(let i=0; i < weather.length; i++){
+    weather[i].forEach(num => {
+      total = total + num;
+      sum++;
+    })
+  }
+  return total/sum;
 }
 
 /* ------------------------------------------------------------------------------------------------
