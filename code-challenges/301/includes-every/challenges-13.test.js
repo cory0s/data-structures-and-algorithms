@@ -57,9 +57,8 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   let string = [];
-  for(let i=0; i<str.length; i+2){
-    // let letter = str.charAt(i);
-    string.push(letter);
+  for(let i=1; i<str.length; i+=2){
+    string.push(str[i]);
   }
   return string.join('');
 };
@@ -72,8 +71,11 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   let answers = [];
-  answers.push(arr.forEach(string => string.includes(':)')));
-  if(answers.includes('false')){
+  arr.forEach(string => {
+    string.includes(':)') ? answers.push(true) : answers.push(false)
+  });
+
+  if(answers.includes(false)){
     return false;
   } else {
     return true;
@@ -88,8 +90,8 @@ Write a function named findAnything that takes in an array of strings, along wit
 
 const findAnything = (arr, target) => {
   let answers = [];
-  for(i=0; i<arr.length; i++){
-    answers.push(arr[i].includes(target) ? arr[i] : null);
+  for(let i=0; i<arr.length; i++){
+    arr[i].includes(target) ? answers.push(arr[i]) : null;
   }
   return answers;
 };
@@ -101,7 +103,12 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
+  let answers = [];
+  arr.forEach(string => {
+    string.includes(target) ? answers.push(true) : answers.push(false);
+  })
+  let answer = answers.includes(false) ? false : true;
+  return answer;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -117,7 +124,16 @@ For example, [['Brook Testing', 'Actual Person'], ['Human Person', 'Brook again'
 ------------------------------------------------------------------------------------------------ */
 
 const unenrollBrook = (arr) => {
-  // Solution code here...
+  let answers = [];
+  for(let i=0; i<arr.length; i++){
+    let current = arr[i];
+    answers.push(
+      current.filter(student => {
+        student.includes('Brook') === false;
+      })
+    )
+  }
+  return answers;
 };
 
 /* ------------------------------------------------------------------------------------------------
