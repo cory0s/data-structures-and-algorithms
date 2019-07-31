@@ -125,14 +125,12 @@ For example, [['Brook Testing', 'Actual Person'], ['Human Person', 'Brook again'
 
 const unenrollBrook = (arr) => {
   let answers = [];
-  for(let i=0; i<arr.length; i++){
-    let current = arr[i];
-    answers.push(
-      current.filter(student => {
-        student.includes('Brook') === false;
-      })
-    )
-  }
+  arr.forEach(course => {
+    let newCourse = course.filter(student => {
+      return student.includes('Brook') === false
+    });
+    answers.push(newCourse);
+  })
   return answers;
 };
 
@@ -160,7 +158,15 @@ For example, ['Tuesday', 'Monday', 'Wednesday and Thursday', 'Tuesday 2', 'Thurs
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const sortByDay = (arr) => {
-  // Solution code here...
+  let answers = [[],[],[],[],[],[],[]];
+  arr.forEach(activity => {
+    for(let i=0; i<daysOfWeek.length; i++){
+      if(activity.includes(daysOfWeek[i])){
+        answers[i].push(activity);
+      }
+    }
+  })
+  return answers;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -172,7 +178,12 @@ For example, ['abcd', 'efgh', 'ijkl', 'mnop'] returns ['a', 'f', 'k', 'p']
 ------------------------------------------------------------------------------------------------ */
 
 const characterByIndex = (arr) => {
-  // Solution code here...
+  let answers = [];
+  arr.forEach(str => {
+    answers.push(str[arr.indexOf(str)]);
+    arr[arr.indexOf(str)] = null;
+  })
+  return answers;
 };
 
 /* ------------------------------------------------------------------------------------------------
