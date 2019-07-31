@@ -204,7 +204,9 @@ For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
 const removeVowels = (str) => {
-  // Solution code here...
+  const vowels = ['a', 'e', 'i','o', 'u'];
+  let word = str.split('');
+  return word.filter(letter => !vowels.includes(letter)).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -218,7 +220,11 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-  // Solution code here...
+  const vowels = ['a', 'e', 'i','o', 'u'];
+  let word = str.split('');
+  let nonVowels = word.filter(letter => !vowels.includes(letter)).join('');
+  let wordVowels = word. filter(letter => vowels.includes(letter)).sort().join('');
+  return [nonVowels, wordVowels]
 };
 
 /* ------------------------------------------------------------------------------------------------
