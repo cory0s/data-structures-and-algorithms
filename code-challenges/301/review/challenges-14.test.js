@@ -157,9 +157,64 @@ Here is a sample board:
   ['X', 'O', 'X'],
 ];
 ------------------------------------------------------------------------------------------------ */
+const helpCheck = (arr, row, col) => {
+  return arr[row][col];
+}
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
+  //check rows
+  // let rowCounter = 0;
+  // let colCounter = 0;
+
+  for(let i=0; i<3; i++){
+    let rowCounter = 0;
+    for(let j=0; j<3; j++){
+      let symbol = helpCheck(board, i, j);
+      if(rowCounter ===0 && symbol === 'X'||'O'){
+        rowCounter++;
+      } else if(helpCheck(board, i-1, j-1) === helpCheck(board, i,j)){
+        rowCounter++;
+      } else {
+        return;
+      }
+    }
+    if(rowCounter === 3){
+      return true;
+    } else {
+      rowCounter = 0;
+      return;
+    }
+  }
+
+  //check cols
+  for(let i=0; i<3; i++){
+    let colCounter = 0;
+    for(let j=0; j<3; j++){
+      let symbol = helpCheck(board, j, i);
+      if(colCounter === 0 && symbol === 'X'||'O'){
+        colCounter++;
+      } else if(helpCheck(board, j-1, i-1) === helpCheck(board, j,i)){
+        colCounter++;
+      } else {
+        return;
+      }
+    }
+    console.log(colCounter);
+    if(colCounter === 3){
+      return true;
+    } else {
+      colCounter = 0;
+      return;
+    }
+  }
+
+  return false;
+  //check counters
+  // if(rowCounter === 3 || colCounter === 3){
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
 
 /* ------------------------------------------------------------------------------------------------
