@@ -236,14 +236,23 @@ Write a function named extractChildren that, given the array of characters from 
 ------------------------------------------------------------------------------------------------ */
 
 const extractChildren = (arr) => {
+  
+  let filtered = arr.filter(obj => {
+    if(obj.name.includes('a')){
+      return obj;
+    }
+  });
+  
   let answers = [];
-  arr.filter(obj => {
-    return obj.name.includes('a') ? obj : null;
+  
+  filtered.forEach(obj => {
+    if(obj.children){
+      obj.children.forEach(child => {
+        answers.push(child);
+      })
+    }
   })
-  .reduce((acc,val) => {
-    val.children !== undefined ? val.children.forEach(child => answers.push(child)) : null;
-  })
-  return answers;
+  return answers;  
 };
 
 /* ------------------------------------------------------------------------------------------------
